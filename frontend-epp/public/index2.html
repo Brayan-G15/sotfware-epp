@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Firma e Salva - STU‑430</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f0f0f0;
+      text-align: center;
+      padding: 20px;
+    }
+    #container {
+      width: 340px;
+      margin: auto;
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+    /* Per l'interfaccia, puoi far apparire il canvas con sfondo bianco in CSS,
+       ma questo non verrà salvato nel file PNG, che manterrà lo sfondo trasparente. */
+    canvas {
+      border: 1px solid #000;
+      background-color: #ffffff; /* Solo per l'aspetto UI, il contenuto del canvas rimane trasparente se non lo disegni */
+      margin-top: 10px;
+    }
+    button {
+      margin: 5px;
+      padding: 6px 12px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h2>firmar</h2>
+    <button id="connectBtn">Connectar</button>
+    <button id="clearBtn">Clear</button>
+    <button id="saveButton">Save Signature</button>
+    <br>
+    <!-- Il canvas ha dimensioni 320x200; il contenuto disegnato non include il background CSS -->
+    <canvas id="signatureCanvas" width="320" height="200"></canvas>
+  </div>
+
+  <!-- Includi il driver minimal per la STU‑430 -->
+  <script src="./scripts/wacomstu430.js"></script>
+  <script src="./scripts/app.js">
+    
+  </script>
+</body>
+</html>

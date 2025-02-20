@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Entrega con Firma Wacom</title>
+    <link rel="stylesheet" href="./styles.css">
+    <!-- <script src="ruta/a/wacom-signature.js"></script> Asegúrate de incluir el SDK de Wacom -->
+</head>
+
+<body class="body-epp">
+    <nav class="nav-registro">
+        <div class="hamburger-registro" id="hamburger-registro">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+        </div>
+        <ul id="menu" class="menu">
+            <li><a href="home.html">Inicio</a></li>
+            <li><a href="index.html">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+    <div class="epp-container">
+        <h1 class="epp-title">Entrega de Elementos</h1>
+        
+        <!-- Búsqueda por cédula -->
+        <div class="epp-search">
+            <input type="text" id="epp-cedula" class="epp-input" placeholder="Ingrese la cédula">
+            <button id="epp-buscar" class="epp-button">Buscar</button>
+        </div>
+
+        <!-- Datos del trabajador -->
+        <div id="epp-datos-trabajador" class="epp-datos">
+            <div class="epp-dato"><strong>Nombre:</strong> <span id="epp-nombre"></span></div>
+            <div class="epp-dato"><strong>Apellido:</strong> <span id="epp-apellido"></span></div>
+            <div class="epp-dato"><strong>Cédula:</strong> <span id="epp-cedula-trabajador"></span></div>
+            <div class="epp-dato"><strong>Área:</strong> <span id="epp-area"></span></div>
+            <div class="epp-dato"><strong>Labor:</strong> <span id="epp-labor-trabajador"></span></div>
+        </div>
+
+        <!-- Formulario de entrega -->
+        <form id="epp-formulario" class="epp-form">
+            <div class="epp-form-group">
+                <label for="epp-elemento">Elemento Entregado:</label>
+                <input type="text" id="epp-elemento" class="epp-input" required>
+            </div>
+            <div class="epp-form-group">
+                <label for="epp-cantidad">Cantidad:</label>
+                <input type="number" id="epp-cantidad" class="epp-input" required>
+            </div>
+            <div class="epp-form-group">
+                <label for="epp-labor">Labor:</label>
+                <input type="text" id="epp-labor" class="epp-input" required>
+            </div>
+            <div class="epp-form-group">
+                <label for="epp-firma">Firma Digital:</label>
+                <canvas id="signatureCanvas" class="epp-firma" width="500" height="200"></canvas>
+                <button type="button" id="clearBtn" class="epp-button">Limpiar Firma</button>
+                <button id="connectBtn">conectar</button>
+                <button id="saveButton" >guardar firma</button>
+            </div>
+            <div class="epp-buttons">
+                <button type="button" id="epp-cancelar" class="epp-button epp-button-cancel">conectar</button>
+                <button type="submit"  class="epp-button epp-button-add">Agregar</button>
+            </div>
+        </form>
+    </div>
+    <script src="./scripts/wacomstu430.js"></script>
+    <script src="./scripts/app.js"></script>
+
+</body>
+</html>

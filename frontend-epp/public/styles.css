@@ -1,0 +1,140 @@
+/*  pagina                        entega                      de                           epp */                            
+
+/* Estilos para el menú de navegación */
+.nav-registro {
+    width: 100%;
+    background-color: #2c3e50;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-registro .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-registro .menu li {
+    margin-left: 20px;
+}
+
+.nav-registro .menu li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-registro .menu li a:hover {
+    color: #1abc9c;
+}
+/* Estilos generales */
+.body-epp{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .epp-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .epp-title {
+    text-align: center;
+    color: #333;
+  }
+  
+  .epp-search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .epp-input {
+    padding: 10px;
+    margin-right: 10px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .epp-button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .epp-button-cancel {
+    background-color: #dc3545;
+  }
+  
+  .epp-button-add {
+    background-color: #007bff;
+  }
+  
+  .epp-datos {
+    margin-bottom: 20px;
+  }
+  
+  .epp-dato {
+    margin-bottom: 10px;
+  }
+  
+  .epp-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .epp-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .epp-firma {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: crosshair;
+  }
+  
+  .epp-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .epp-search {
+        flex-direction: column;
+    }
+  
+    .epp-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+  
+    .epp-button {
+        width: 100%;
+    }
+  
+    .epp-buttons {
+        flex-direction: column;
+    }
+  
+    .epp-button {
+        margin-bottom: 10px;
+    }
+  }
+  
