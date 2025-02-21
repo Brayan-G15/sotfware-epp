@@ -18,9 +18,9 @@ const emailRegistro = async (datos) => {
     const info = await transport.sendMail({
         from: "AEC - Administrador de ECommerce Articulos",
         to: email,
-        subject: 'Comprueba tu cuenta en AEC',
-        text: 'Comprueba tu cuenta en AEC',
-        html: `<p>Hola: ${nombre}, comprueba tu cuenta en AEC.</p>
+        subject: 'Comprueba tu cuenta en EPP-Uipalma',
+        text: 'Comprueba tu cuenta en EPP-Unipalma',
+        html: `<p>Hola: ${nombre}, comprueba tu cuenta en EPP_Unipalma.</p>
                <p> Tu cuenta ya esta lista, solo debes comprobarla en el siguiente enlace:
                 <a href="${process.env.FRONTEND_URL}/confirmar/${token}">Comprobar Cuenta</a>
                </p>
