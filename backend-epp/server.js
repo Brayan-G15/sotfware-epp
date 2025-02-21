@@ -8,7 +8,7 @@ const port = 3010;
 
 // Middleware
 app.use(bodyParser.json());
-app.use(express.static('public'));
+app.use(express.static('../frontend-epp/public'));
 
 // Crear la carpeta "signatures" si no existe
 const signaturesDir = path.join(__dirname, 'signatures');
